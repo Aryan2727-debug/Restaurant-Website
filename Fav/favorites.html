@@ -1,0 +1,221 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    
+      <title>Favourites</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" href="favorites.css">
+    </head>
+    
+    <body>
+
+    <h2>Favourites...</h2>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img src="images/burger.jfif"/>
+        </div>
+        <div class="details">
+          <div class="center">
+            <h1>BUrger</h1>
+            <br>
+            <table class="items">
+              <tr>
+              <td>Aloo Tikki Burger</td><td>₹79</td>
+              </tr>
+              <tr>
+              <td>Veggie Burger</td><td>₹89</td>
+              </tr>
+              <tr>
+              <td>Corn Spinach Burger</td><td>₹109</td>
+              </tr>
+              <tr>
+              <td>Cheesy Burger</td><td>₹129</td>
+              </tr>
+              <tr>
+              <td>Paneer Tikka Burger</td><td>₹159</td>
+              </tr>
+              <tr>
+              <td>Beef Burger</td><td>₹199</td>
+              </tr>
+              <tr>
+              <td>Crispy Chicken Burger</td><td>₹219</td>
+              </tr>
+              <tr>
+              <td>Fish Burger</td><td>₹249</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="image">
+          <img src="images/pizza.jfif"/>
+        </div>
+        <div class="details">
+          <div class="center">
+            <h1 class="heading">Pizza</h1><br><br>
+            <div class="content">
+                <span class="veggie" id="choosecategory">VEG</span>&emsp;&emsp;
+                <span class="nonveggie" id="choosecategory">NON VEG</span>&emsp;&emsp;
+                <span><i class="fas fa-times" id="icon"></i></span>
+            </div>
+            <br>
+            <table class="items" id="item1">
+              <tr><th></th><th>S</th><th>M</th><th>L</th></tr>
+              <tr>
+              <td>Farm House 
+                  <br><i>Mouth watering overload of crunchy, crisp capsicum, succulent mushrooms and fresh tomatoes</i>
+              </td><td>₹100</td><td>₹150</td><td>₹220</td>
+              </tr>
+              <td>Veg Loaded 
+                <br><i>Tomato | Grilled Mushroom |Jalapeno |Golden Corn | Beans in a fresh pan crust</i>
+              </td><td>₹120</td><td>₹165</td><td>₹240</td>
+              </tr>
+              <tr>
+              <td>Peggy Paneer 
+                  <br><i>Chunky paneer with crisp capsicum and spicy red pepper - quite a mouthful!</i>
+              </td><td>₹130</td><td>₹170</td><td>₹260</td>
+              </tr>
+              <tr>
+              <td>Veggie Paradise
+                  <br><i>Goldern Corn, Black Olives, Capsicum & Red Paprika</i>
+              </td><td>₹130</td><td>₹180</td><td>₹270</td>
+              </tr>
+              <tr>
+              <td>Indi Tandoori Paneer
+                  <br><i>It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum I red paprika I mint mayo</i>
+              </td><td>₹150</td><td>₹210</td><td>₹300</td>
+              </tr>
+            </table>
+            <br>
+            <table class="items" id="item2">
+              <tr><th></th><th>S</th><th>M</th><th>L</th></tr>
+              <tr>
+              <td>PEPPER BARBECUE CHICKEN
+                  <br><i>Pepper Barbecue Chicken I Cheese</i>
+              </td><td>₹180</td><td>₹230</td><td>₹300</td>
+              </tr>
+              <td>Chicken Golden Delight 
+                <br><i>Barbeque chicken with a topping of golden corn loaded with extra cheese. Worth its weight in gold!</i>
+              </td><td>₹190</td><td>₹250</td><td>₹320</td>
+              </tr>
+              <tr>
+              <td>PEPPER BARBECUE & ONION
+                  <br><i>Pepper Barbecue Chicken I Onion</i>
+              </td><td >₹200</td><td>₹250</td><td>₹340</td>
+              </tr>
+              <tr>
+              <td>CHICKEN FIESTA
+                  <br><i>Grilled Chicken Rashers I Peri-Peri Chicken I Onion I Capsicum</i>
+              </td><td>₹250</td><td>₹290</td><td>₹350</td>
+              </tr>
+              <tr>
+              <td>Indi Chicken Tikka
+                  <br><i>The wholesome flavour of tandoori masala with Chicken tikka I onion I red paprika I mint mayo</i>
+              </td><td>₹280</td><td>₹340</td><td>₹400</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+        
+      <div class="card">
+        <div class="image">
+          <img src="images/pasta.jfif"/>
+        </div>
+        <div class="details">
+          <div class="center">
+            <h1>Pasta</h1>
+            <br>
+            <table class="items">
+              <tr>
+              <td>Red Sauce Pasta</td><td>₹140</td>
+              </tr>
+              <tr>
+              <td>White Sauce Pasta</td><td>₹160</td>
+              </tr>
+              <tr>
+              <td>Red & White Sauce Pasta</td><td>₹180</td>
+              </tr>
+              <tr>
+              <td>Jumbo Pasta</td><td>₹209</td>
+              </tr>
+              <tr>
+              <td>Manchurian Pasta</td><td>₹230</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <div class="image">
+          <img src="images/GralicBread.jpg"/>
+        </div>
+        <div class="details">
+          <div class="center">
+            <h1>Garlic Breads</h1>
+            <br>
+            <table class="items">
+              <tr>
+              <td>Garlic Bread</td><td>₹140</td>
+              </tr>
+              <tr>
+              <td>Cheese Garlic Bread</td><td>₹160</td>
+              </tr>
+              <tr>
+              <td>Melted Cheese Garlic Bread</td><td>₹190</td>
+              </tr>
+              <tr>
+              <td>Baked Beans Garlic Bread</td><td>₹170</td>
+              </tr>
+              <tr>
+              <td>Cheese Chilli Garlic Bread</td><td>₹200</td>
+              </tr>
+              <tr>
+              <td>Special Garlic Bread</td><td>₹2000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <script>
+
+        $(document).ready(function(){
+          $("#item1").hide();
+          $("#item2").hide();
+          $("#icon").hide();
+
+          $(".veggie").click(function(){
+            $("#item1").show();
+            $("#item2").hide();
+            $(".heading").hide();
+            $("#icon").show();
+          });
+
+          $(".nonveggie").click(function(){
+            $("#item2").show();
+            $("#item1").hide();
+            $(".heading").hide();
+            $("#icon").show();
+          });
+
+          $("#icon").click(function(){
+            $("#item1").hide();
+            $("#item2").hide();
+            $(".heading").show();
+            $(this).hide();
+          })
+
+        })
+
+      </script>
+    </body>
+    </html>

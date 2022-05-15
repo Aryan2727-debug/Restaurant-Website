@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+body{
+    min-height: 100vh;
+    background: #444;
+    font-family: cursive;
+    overflow-y:scroll;
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2{
+    font-size: 120px;
+    text-shadow: 0 0 5px #ffa500;
+    color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align:center;
+    margin-top:40px;
+    animation: blink 5s infinite;
+    -webkit-animation: blink 5s infinite;
+}
+
+.container{
+    margin : 6.9%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:50px 70px;
+
+}
+
+.card {
+    position:relative;
+    width: 400px;
+    height: 380px;
+    background: #000;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.card .image {
+    overflow: hidden;
+    width: 400px;
+    height: 380px;
+}
+.card .image img {
+    width: 100%;
+    transition: .7s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card .details .center .items{
+    height: 100%;
+    width:100%;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.card .details .center .items tr:hover {
+    font-size: 20px;
+    color:rgba(252, 85, 8, 0.945);
+    font-family:'Courier New', Courier, monospace;
+    background-color: honeydew;
+    font-style: none;
+    font-weight: bold;
+}
+
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    33%,
+    55% {
+      color: rgb(186, 250, 68);
+      text-shadow:  0 0 15px rgb(240, 26, 211);
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+    text-shadow: 0 0 5px rgb(19, 173, 211), 0 0 15px rgb(52, 133, 238), 0 0 20px rgb(233, 119, 13), 0 0 40px rgba(241, 14, 33, 0.795), 0 0 60px tomato, 0 0 10px rgb(230, 76, 171), 0 0 200px rgb(255, 0, 0);
+      color: #f5cb59;
+    }
+  }
+
+
+
+

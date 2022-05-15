@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function abc(){
+var aa=document.getElementById("a").value
+var bb=document.getElementById("b").value
+var cc=document.getElementById("c").value
+var dd=document.getElementById("d").value
+if(aa.length==0)
+alert("Enter your First Name")
+else if(bb.length==0)
+alert("Enter your Last Name")
+else if(cc.length==0)
+alert("Enter your Email")
+else if(dd.length==0)
+alert("Enter your Phone Number")
+else
+alert("Feedback Form Submitted")
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#h:hover{text-shadow:4px 4px 6px blue}
+#d2:hover{transform:scale(1.125)}
+#feedhead:hover{text-shadow:4px 4px 6px blue}
+.checked {
+  color: white;
+}
+.checked:hover{color:orange}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body style="background-color:black">
+<div id="d1" style="height:55px;width:100%;background-color:gray">
+<h1 id="h" style="color:yellow;font-family:sans-serif">Give Your Feedback</h1>
+</div>
+<div id="d2" style="background-color:navy;height:370px;width:500px;position:absolute;top:20%;left:26%;transition:0.3s ease-in-out">
+<p style="color:white;font-family:sans-serif;position:absolute;top:8%">We would really appreciate the Feedback of you, our customers and we would like to receive the reviews of our service and the quality of our food.</p>
+<p style="color:white;font-family:sans-serif;position:absolute;top:35%">Below is our constructively designed Feedback Form for all of our customers to fill and review our Restaurant. Please note that it is not compulsory for all the customers to fill this Feedback Form.</p>
+<p style="color:white;font-family:sans-serif;position:absolute;top:63%">We would really appreciate some constructive criticism from all of our customers. This Feedback Form would really help us to improve the quality of our food and our service and provide the best experience to our customers.</p>
+</div>
+<div id="d3" style="height:52px;width:100%;background-color:gray;position:absolute;top:92%">
+<h2 id="feedhead" style="color:yellow;font-family:sans-serif">Feedback Form</h2>
+</div>
+<label style="color:white;font-family:sans-serif;position:absolute;top:110%;left:7%">Your First Name: </label>
+<input type="text" id="a" style="position:absolute;top:114.5%;left:7%;width:35%" placeholder="Enter your First Name">
+<label style="color:white;font-family:sans-serif;position:absolute;top:110%;left:63%">Your Last Name: </label>
+<input type="text" id="b" style="position:absolute;top:114.5%;left:63%;width:35%" placeholder="Enter your Last Name">
+<label style="color:white;font-family:sans-serif;position:absolute;top:125%;left:7%">Your Email: </label>
+<input type="email" id="c" style="position:absolute;top:129.5%;left:7%;width:35%" placeholder="Enter your Email">
+<label style="color:white;font-family:sans-serif;position:absolute;top:125%;left:63%">Your Phone Number: </label>
+<input type="email" id="d" style="position:absolute;top:129.5%;left:63%;width:35%" placeholder="Enter your Phone Number">
+<label style="color:white;font-family:sans-serif;position:absolute;top:140%;left:7%">Date Of Your Visit: </label>
+<input type="date" style="position:absolute;top:144.5%;left:7%;width:35%">
+<label style="color:white;font-family:sans-serif;position:absolute;top:140%;left:63%">Number Of Members Who Visited: </label>
+<select style="position:absolute;top:144.5%;left:63%;width:35%">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select>
+<label style="color:white;font-family:sans-serif;position:absolute;top:155%;left:7%">The Branch You Visited: </label>
+<select style="position:absolute;top:159.5%;left:7%;width:35%">
+  <option>Select Branch</option>
+  <option>Chandigarh Branch</option>
+  <option>Delhi Branch</option>
+  <option>Mumbai Branch</option>
+  <option>Kolkata Branch</option>
+  <option>Chennai Branch</option>
+  <option>U.P. Branch</option>
+  <option>Pondicherry Branch</option>
+</select>
+<label style="color:white;font-family:sans-serif;position:absolute;top:155%;left:63%">Give Some Comments and Feedback: </label>
+<textarea style="position:absolute;top:159.5%;left:63%;font-family:cursive" rows="7" cols="35">Enter your comments.</textarea>
+<label style="color:white;font-family:sans-serif;position:absolute;top:170%;left:7%">Give Us A Rating Out Of 5: </label>
+<span class="fa fa-star checked" style="position:absolute;top:175%;left:7.2%"></span>
+<span class="fa fa-star checked" style="position:absolute;top:175%;left:8.7%"></span>
+<span class="fa fa-star checked" style="position:absolute;top:175%;left:10.2%"></span>
+<span class="fa fa-star checked" style="position:absolute;top:175%;left:11.7%"></span>
+<span class="fa fa-star checked" style="position:absolute;top:175%;left:13.2%"></span>
+<button onclick="abc()" class="btn btn-primary btn-md" style="position:absolute;top:190%;left:13%">Submit Your Feedback</button>
+<div id="d6" style="height:70px;width:100%;background-color:gray;position:absolute;top:200%">
+<p style="color:yellow;font-family:sans-serif;position:absolute;top:34%;left:35%">© 2021 Foodie's Bliss . All Rights Reserved . </p>
+</div>
+</body>
+</html>

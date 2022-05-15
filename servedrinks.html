@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>Foodie's Bliss Bar</title>
+  <script>
+  function abc(){
+  var age=document.getElementById("a").value;
+  if (age<18 && age>0)
+  document.getElementById("b").innerHTML="No,the Person is Under-Age"
+  else if(age==0)
+  alert("Please Enter Your Age")
+  else
+  document.getElementById("b").innerHTML="Yes,Drinks can be Served"}
+  function def(){
+  alert("Your order has been successfully placed")
+  }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <style>
+  body{background-image:radial-gradient(gray,black)}
+  label{color:yellow;position:absolute;top:50%;left:40%;font-size:25px;font-family:sans-serif}
+  input{position:absolute;top:60%;left:34%;width:30%;height:5%}
+  button{position:absolute;top:70%;left:34%;width:30%;height:5%;background-color:black;color:yellow;font-family:sans-serif;font-size:15px}
+  p{position:absolute;top:78%;left:34%;color:yellow;font-size:25px;font-family:cursive}
+  #img1{position:absolute;left:38%;top:12%;transition:0.3s ease-in-out}
+  #img1:hover{transform:scale(1.125)}
+  h1{position:absolute;top:2%;left:38%;background-color:black;color:yellow;text-shadow:4px 6px 5px cyan}
+  #img2{position:absolute;left:5%;transition:0.3s ease-in-out}
+  #img2:hover{transform:scale(1.125)}
+  #img3{position:absolute;top:50%;left:3%;transition:0.3s ease-in-out}
+  #img3:hover{transform:scale(1.125)}
+  #img4{position:absolute;left:80%;transition:0.3s ease-in-out}
+  #img4:hover{transform:scale(1.125)}
+  #img5{position:absolute;top:50%;left:70%;transition:0.3s ease-in-out}
+  #img5:hover{transform:scale(1.125)}
+  #img6{position:absolute;top:80%;left:3%;transition:0.3s ease-in-out}
+  #img6:hover{transform:scale(1.125)}
+  #img7{position:absolute;top:80%;left:73%;transition:0.3s ease-in-out}
+  #img7:hover{transform:scale(1.125)}
+  </style>
+</head>
+<body>
+<label>Enter Your Age:</label><br><br>
+<input type="number" id="a"><br><br><br>
+<button type="button" onclick="abc()" class="btn btn-warning btn-md">Check if Drinks can be Served</button>
+<p id="b"></p>
+<img src="foodieblisslogo.png" alt="image" id="img1">
+<img src="carlsberg.png" id="img2" height="150">
+<img src="absolut.png" id="img3" height="100">
+<img src="hennessey.png" id="img4" height="120">
+<img src="ballantines.png" id="img5" height="100">
+<h1>WELCOME TO</h1>
+<img src="barpic.jpg" id="img6" height="160" width="250"> 
+<img src="barpic1.jpg" id="img7" height="160" width="250">
+<select style="position:absolute;top:87%;left:34%">
+  <option>Select Drink</option>
+  <option>Absolut Vodka</option>
+  <option>Hennessy Cognac</option>
+  <option>Carlsberg Beer</option>
+  <option>Ballantines Whiskey</option>
+  <option>Royal Challenge Whiskey</option>
+  <option>100 Pipers Scotch</option>
+  <option>Black Label Whiskey</option>
+</select>
+<button onclick="def()" class="btn btn-danger btn-md" style="position:absolute;top:96%;left:34%">Place Order</button>
+</body>
+</html>
